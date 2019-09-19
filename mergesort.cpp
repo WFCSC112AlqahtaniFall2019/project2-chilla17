@@ -69,7 +69,7 @@ void mergeSortedLists(vector<int>& a, vector<int>& tmp, int left, int middle, in
     int posRight = mid; // right position in left half of vector
     int posTmp = left; // position in tmp array, incremented in each loop
 
-    while ((posLeft <= middle) && (posRight <= right)) {
+    while ((posLeft <= middle) && (posRight <= right)) { // referring to the two halves of the vector
         if (a.at(posLeft) <= a.at(posRight)) { // if left element in left half is less than left element in right half
             tmp.at(posTmp) = a.at(posLeft); // move left element in left half to first available position in tmp vector
             posLeft++; // increment position in left half
