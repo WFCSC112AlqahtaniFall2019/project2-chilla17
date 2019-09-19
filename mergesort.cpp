@@ -20,7 +20,7 @@ int main() {
     // unit test for merge
     vector<int> test = {3,-7, 14,11, 8, 1, 13, -16, 2, 0};
     vector<int> tmpTest = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-    mergeSort(test, tmpTest, 0, 9);
+    mergeSortedLists(test, tmpTest, 0, 5, 9);
 
     for(int i = 1; i < v.size(); i++) {
         assert(v.at(i-1) <= v.at(i));
